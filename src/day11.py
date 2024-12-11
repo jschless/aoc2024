@@ -15,7 +15,7 @@ def explore_number(x, i):
         return memo[(x, i)]
 
     if i == 0:
-        ans = 1
+        return 1
     elif x == 0:
         ans = explore_number(1, i - 1)
     elif len_s % 2 == 0:
